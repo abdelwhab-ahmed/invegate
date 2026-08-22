@@ -2,6 +2,8 @@
 import Image from "next/image";
 import LocationSearch from "./components/LocationSearch";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const [{ data: locations }, { data: lands }, { data: developers }] =
     await Promise.all([
